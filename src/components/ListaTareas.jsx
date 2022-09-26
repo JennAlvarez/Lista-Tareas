@@ -1,5 +1,6 @@
+import React from "react";
 import ItemTarea from "./ItemTarea";
-import ListGroup from "react-bootstrap/ListGroup";
+import ListGroup from 'react-bootstrap/ListGroup';
 
 const ListaTareas = () => {
   return (
