@@ -3,9 +3,11 @@ import { Form, Button } from "react-bootstrap";
 import { useState, useEffect } from "react";
 
 const Formulario = () => {
+  // buscar datos del localstorage
+  const tareasLocalStorage = JSON.parse(localStorage.getItem('arregloTareaKey')) || [];
   // aqui va la logica
   const [tarea, setTarea] = useState("");
-  const [arregloTarea, setArregloTarea] = useState([]);
+  const [arregloTarea, setArregloTarea] = useState(tareasLocalStorage);
 
   // ciclo de vida del componente
   useEffect(()=>{
